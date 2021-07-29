@@ -1,0 +1,48 @@
+{
+  "kind": "collectionType",
+  "collectionName": "artistas",
+  "info": {
+    "name": "Artista"
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nombre": {
+      "type": "string",
+      "required": true
+    },
+    "url_spotify": {
+      "type": "string"
+    },
+    "url_youtube": {
+      "type": "string"
+    },
+    "url_instagram": {
+      "type": "string"
+    },
+    "url_twitter": {
+      "type": "string"
+    },
+    "imagenes": {
+      "collection": "file",
+      "via": "related",
+      "allowedTypes": [
+        "images"
+      ],
+      "plugin": "upload",
+      "required": false,
+      "pluginOptions": {}
+    },
+    "biografia": {
+      "type": "richtext"
+    },
+    "canciones": {
+      "via": "artistas",
+      "collection": "cancion"
+    }
+  }
+}

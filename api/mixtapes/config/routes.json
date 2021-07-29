@@ -1,0 +1,52 @@
+{
+  "routes": [
+    {
+      "method": "GET",
+      "path": "/mixtapes",
+      "handler": "mixtapes.find",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mixtapes/count",
+      "handler": "mixtapes.count",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "GET",
+      "path": "/mixtapes/:id",
+      "handler": "mixtapes.findOne",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "POST",
+      "path": "/mixtapes",
+      "handler": "mixtapes.create",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "PUT",
+      "path": "/mixtapes/:id",
+      "handler": "mixtapes.update",
+      "config": {
+        "policies": []
+      }
+    },
+    {
+      "method": "DELETE",
+      "path": "/mixtapes/:id",
+      "handler": "mixtapes.delete",
+      "config": {
+        "policies": []
+      }
+    }
+  ]
+}

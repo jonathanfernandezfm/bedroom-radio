@@ -1,0 +1,41 @@
+{
+  "kind": "collectionType",
+  "collectionName": "canciones",
+  "info": {
+    "name": "Canciones",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "id_youtube": {
+      "type": "uid",
+      "required": true
+    },
+    "url_youtube": {
+      "type": "string",
+      "required": true
+    },
+    "url_spotify": {
+      "type": "string"
+    },
+    "estreno": {
+      "type": "boolean",
+      "default": false
+    },
+    "artistas": {
+      "collection": "artista",
+      "via": "canciones",
+      "dominant": true
+    },
+    "generos": {
+      "collection": "genero",
+      "via": "canciones",
+      "dominant": true
+    }
+  }
+}
