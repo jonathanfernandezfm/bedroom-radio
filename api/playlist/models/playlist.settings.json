@@ -23,8 +23,8 @@
       "required": true
     },
     "canciones": {
-      "collection": "cancion",
       "via": "playlists",
+      "collection": "cancion",
       "dominant": true
     }
   }
