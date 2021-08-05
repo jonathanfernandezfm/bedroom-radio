@@ -36,6 +36,10 @@
       "collection": "genero",
       "via": "canciones",
       "dominant": true
+    },
+    "playlists": {
+      "via": "canciones",
+      "collection": "playlist"
     }
   }
 }
