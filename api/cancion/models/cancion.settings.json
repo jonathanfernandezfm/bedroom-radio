@@ -40,6 +40,10 @@
     "url_youtube": {
       "type": "string",
       "required": true
+    },
+    "id_youtube": {
+      "type": "string",
+      "required": true
     }
   }
 }
