@@ -12,11 +12,7 @@
   },
   "pluginOptions": {},
   "attributes": {
-    "id_youtube": {
-      "type": "uid",
-      "required": true
-    },
-    "url_youtube": {
+    "nombre": {
       "type": "string",
       "required": true
     },
@@ -40,6 +36,10 @@
     "playlists": {
       "via": "canciones",
       "collection": "playlist"
+    },
+    "url_youtube": {
+      "type": "string",
+      "required": true
     }
   }
 }
