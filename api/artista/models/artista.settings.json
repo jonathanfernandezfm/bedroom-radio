@@ -2,7 +2,8 @@
   "kind": "collectionType",
   "collectionName": "artistas",
   "info": {
-    "name": "Artista"
+    "name": "Artista",
+    "description": ""
   },
   "options": {
     "increments": true,
@@ -27,22 +28,15 @@
     "url_twitter": {
       "type": "string"
     },
-    "imagenes": {
-      "collection": "file",
-      "via": "related",
-      "allowedTypes": [
-        "images"
-      ],
-      "plugin": "upload",
-      "required": false,
-      "pluginOptions": {}
-    },
     "biografia": {
       "type": "richtext"
     },
     "canciones": {
       "via": "artistas",
       "collection": "cancion"
+    },
+    "url_imagen": {
+      "type": "string"
     }
   }
 }

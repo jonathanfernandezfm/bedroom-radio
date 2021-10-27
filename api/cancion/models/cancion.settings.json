@@ -24,8 +24,8 @@
       "default": false
     },
     "artistas": {
-      "collection": "artista",
       "via": "canciones",
+      "collection": "artista",
       "dominant": true
     },
     "generos": {
