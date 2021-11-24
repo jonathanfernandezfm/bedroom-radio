@@ -26,6 +26,9 @@
       "via": "playlists",
       "collection": "cancion",
       "dominant": true
+    },
+    "url_imagen": {
+      "type": "string"
     }
   }
 }
